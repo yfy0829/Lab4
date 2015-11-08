@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>update</title>
+</head>
+<body>
+
+	<form method="post">
+	{% csrf_token %} 
+		<div align="center"><h1>update</h1></div>
+		<div align="center"><a href="/book_view/?title={{book.title}}">see</a></div>
+          
+		<table border="1" align="center">
+			<tr>
+			<th>isbn</th><th>authorID</th><th>title</th><th>publisher</th><th>publishdate</th><th>price</th>
+			</tr>
+				<td><input name="isbn" type="text" value={{book.isbn}}></td>
+				<td><input name="authorID" type="text" value={{book.authorID}}></td>
+				<td><input name="title" type="text" value={{book.title}}></td>
+				<td><input name="publisher" type="text" value={{book.publisher}}></td>
+				<td><input name="publishdate" type="text" value={{book.publishdate|date:"Y-m-d" }}></td>
+
+				<td><input name="price" type="text" value={{book.price}}></td>
+
+				<td><input  type="submit" value="save"><input type="reset" value="clear"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>

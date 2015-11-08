@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insert BookDB</title>
+</head>
+<body>
+<div align="center"><h3>Author isn't exist,please add author.</h3></div>
+	<form method="post">
+	{% csrf_token %}
+		<div align="center"><h1>Insert Author</h1></div>
+		<table border="1" align="center">
+			<tr>
+			<th>authorID</th><th>name</th><th>age</th><th>country</th><
+			</tr>
+				<td><input name="authorID" type="text" ></td>
+				<td><input name="name" type="text" ></td>
+				<td><input name="age" type="text" ></td>
+				<td><input name="country" type="text" ></td>
+
+				<td><input  type="submit" value="save"><input type="reset" value="clear"></td>
+			</tr>
+		</table>
+	</body>
+
+</html>

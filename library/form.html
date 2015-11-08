@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insert BookDB</title>
+</head>
+<body>
+
+	<form method="post">
+	{% csrf_token %}
+		<div align="center"><h1>Insert BookDB</h1></div>
+		<table border="1" align="center">
+			<tr>
+			<th>isbn</th><th>authorID</th><th>title</th><th>publisher</th><th>publishdate</th><th>price</th>
+			</tr>
+				<td><input name="isbn" type="text" ></td>
+				<td><input name="authorID" type="text" ></td>
+				<td><input name="title" type="text" ></td>
+				<td><input name="publisher" type="text"></td>
+				<td><input name="publishdate" type="text" ></td>
+
+				<td><input name="price" type="text"></td>
+
+				<td><input  type="submit" value="save"><input type="reset" value="clear"></td>
+			</tr>
+		</table>
+	</body>
+
+</html>

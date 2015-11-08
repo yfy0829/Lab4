@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>search</title>
+</head>
+<body>
+	<div align="center"><h1>search</h1></div>
+	<div align="center"><a href="/add_book/">insert</a></div>
+		<table border="1" align="center">
+		<tr>
+			
+			<th>title</th>
+			
+			
+		</tr>
+		{% for book in book %}
+			<tr>
+				<td><a href="/book_view/?title={{book.title}}">{{book.title}}</a></td>	
+				
+		{% endfor %}      
+
+	</table>
+</body>
+</html>
